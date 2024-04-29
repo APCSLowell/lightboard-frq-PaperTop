@@ -33,11 +33,11 @@ public class LightBoard
     /* to be implemented in part (b) */
     int count  == 0;
     for (int i = 0; i < lights.length; i++){
-      if (lights[i][col] == true){
+      if (lights[i][col]){
         count++;
       }
     }
-    if (lights[row][col] == true && count % 2 == 0){
+    if (lights[row][col] && count % 2 == 0){
       return false;
     }
     else if (lights[row][col] == false && count % 3 == 0){
